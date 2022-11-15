@@ -29,7 +29,6 @@ public class Driver : MonoBehaviour
     void Update()
     {
         // Clamp move speed
-        _moveSpeed = Mathf.Clamp(_moveSpeed, 3f, 30f);
         applySteering();
         applyMovement();
     }
@@ -60,7 +59,7 @@ public class Driver : MonoBehaviour
 
     public void SetMoveSpeed(float moveSpeed)
     {
-        _moveSpeed = moveSpeed;
+        _moveSpeed = Mathf.Clamp(moveSpeed, 3f, 30f);
     }
 
     public float GetMoveSpeed()

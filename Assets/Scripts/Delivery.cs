@@ -52,9 +52,4 @@ public class Delivery : MonoBehaviour
                 break;
         }
     }
-    
-    void OnCollisionEnter2D(Collision2D other)
-    {
-
-    }
 }
